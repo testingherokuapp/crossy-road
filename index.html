@@ -1,140 +1,25 @@
-<html lang="en"><head>
-	<meta charset="utf-8">
+<!--
+Game Bootstrapper
+
+@author Kasper Mol <kasper@poki.com>
+@copyright Poki 2017
+-->
+<!doctype HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 
 	<title>Crossy Road</title>
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" async="" href="app-store-interstitial.css">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" async href="app-store-interstitial.css" />
+
+	<script src="poki.js"></script>
 
 	<script src="scripts/extra.min.js"></script>
-    <script src="poki-sdk.js"></script><script src="poki-sdk-core-v2.234.2.js" type="text/javascript" crossorigin="anonymous"></script>
-<script src="scripts/asset-loader.min.js"></script><script src="scripts/three.min.js"></script><script src="scripts/game.min.js"></script><script src="scripts/game.min.js"></script><style>
-#poki-preroll {
-	background: #83FFE7;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 99999;
-	overflow: hidden;
-	perspective: 1000px;
-}
-
-#poki-preroll .logo {
-	position: relative;
-	perspective: 1000px;
-	z-index: 1;
-	max-height: 40%;
-	max-width: 80%;
-}
-
-#poki-preroll .icon-container {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transform: rotate(-5deg);
-}</style><style>
-#poki-preroll .icon-scroller {
-	perspective: 1000px;
-	position: absolute;
-	left: 0;
-	top: -10%;
-	width: 100%;
-	height: 120%;
-	transform: translateX(0);
-	animation: scroll 10.695652173913043s infinite linear;
-	background-image: url(sprites/poki-icon.png);
-	background-size: 82px 82px;
-}
-
-@keyframes scroll {
-	0% {
-		transform: translateX(-656px);
-	},
-	100% {
-		transform: translateX(0);
-	}
-}
-</style><style>
-#loading-bar {
-	position: absolute;
-	z-index: 9999999;
-	width: 93%;
-	height: 5%;
-	left: 2.5%;
-	bottom: -12%;
-	transition: all 0.5s ease-in-out;
-	transform: translate3d(0,0,0);
-	perspective: 1000px;
-}
-
-#loading-bar-inner-container {
-	position: absolute;
-	background: #4ecbff;
-	box-shadow: inset 0 -5px #0ea9f1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-
-#loading-bar-bar {
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	background: #fea47c;
-	transform-origin: left;
-	box-shadow: inset 0 -5px #ff8149;
-	transition: 0.2s all ease-out;
-	z-index: 1;
-	perspective: 1000px;
-}
-
-#loading-bar-text {
-	text-align: center;
-	font-family: Arial;
-	font-weight: bold;
-	color: #fff;
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	top: 8%;
-	text-shadow: 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.loading-bar-border {
-	background: #fff;
-	position: absolute;
-}
-
-#loading-bar-chicken {
-	position: absolute;
-	right: -3%;
-	top: -60%;
-	height: 200%;
-	z-index: 1;
-	transform-origin: 50% 100%;
-	animation: chicken-idle-animation .6s ease-in-out alternate infinite;
-}
-
-@keyframes chicken-idle-animation {
-	0%  { transform: scale3d(1, 1, 1); }
-	15%  { transform: scale3d(1, 1, 1); }
-	85% { transform: scale3d(1.1, .9, 1.1); }
-	100% { transform: scale3d(1.1, .9, 1.1); }
-}
-</style><script src="scripts/tween.min.js"></script></head>
+</head>
 <body>
-	<script src="scripts/bootstrap.min.js"></script><div id="container" style="position: absolute; left: 50%; top: 50%; background: rgb(123, 203, 237); display: block; overflow: hidden; width: 656px; height: 920px; margin-left: -328px; margin-top: -460px;"><div id="poki-preroll" style="visibility: visible;"><img src="https://yell0wsuit.github.io/html5-games/games/crossy-road/sprites/poki-logo.png" class="logo" style="transform: translateY(-920px);"><div class="icon-container"><div class="icon-scroller" style="left: -100%;"></div><div class="icon-scroller" style="left: 0%;"></div><div class="icon-scroller" style="left: 100%;"></div></div></div><div id="loading-bar" style="transform: translate3d(0px, -270%, 0px);"><div id="loading-bar-inner-container"><div id="loading-bar-bar" style="transform: scale3d(0, 1, 1);"></div><div id="loading-bar-text" style="font-size: 32.86px;"><span>0</span><span style="font-size: 15.33px;">.1</span><span>%</span></div></div><div class="loading-bar-border" style="height: 100%; left: -4.6px; width: 619.278px;"></div><div class="loading-bar-border" style="width: 100%; top: -4.6px; height: 55.2px;"></div><img src="https://yell0wsuit.github.io/html5-games/games/crossy-road/sprites/chicken.png" id="loading-bar-chicken"></div></div>
-
-</body></html>
+	<script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>
